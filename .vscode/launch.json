@@ -7,9 +7,9 @@
         "name": "Next: Chrome",
         "url": "http://localhost:3000",
         "webRoot": "${workspaceFolder}",
-        "sourceMapPathOverrides": {
-        "webpack:///*": "${webRoot}/*"
-        },
+        // "sourceMapPathOverrides": {
+        //     "webpack:///*": "${webRoot}/*"
+        // },
     },
     {
         "type": "node",

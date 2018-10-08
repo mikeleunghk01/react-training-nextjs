@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from "next/router";
+import Simple from "../components/Simple";
 
 class Index extends Component {
   state = {}
@@ -26,6 +27,7 @@ class Index extends Component {
         <div>
         {fromInitialProps}
         </div>
+        <Simple />
         <button onClick={() => router.push("/about")}>Route to next page</button>
       </div>);
   }

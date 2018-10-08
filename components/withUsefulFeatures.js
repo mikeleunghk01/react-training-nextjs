@@ -22,12 +22,12 @@ const withUsefulFeatures = args =>
 
 
         return {
-          ...initialProps
+          initialProps
         };
       }
 
       render() {
-        return <WrappedComponent {...this.props} {...WrappedComponent.props} />;
+        return <WrappedComponent {...this.props.initialProps} {...WrappedComponent.props} />;
       }
     }
 
