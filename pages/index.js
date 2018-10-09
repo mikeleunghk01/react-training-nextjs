@@ -8,6 +8,9 @@ class Index extends Component {
   static async getInitialProps({ req, res, query = {}, ...rest }) {
     const { injectedValue } = query
 
+    const isServer = typeof window === 'undefined';
+    console.log({isServer}, "Index getInitialProps");
+
     if (injectedValue) {
       console.log({
         injectedValue

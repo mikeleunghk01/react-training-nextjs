@@ -6,6 +6,9 @@ class About extends Component {
   state = { click: 0 }
 
   static async getInitialProps({ req, res, usefulFeatures, args, ...restInInitialProps }) {
+    const isServer = typeof window === 'undefined';
+    console.log({isServer}, "About getInitialProps");
+
     console.log({restInInitialProps});
 
     return {
