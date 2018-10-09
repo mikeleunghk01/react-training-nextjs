@@ -21,7 +21,7 @@ app
         console.log("Not HMR stuff", req.path);
       }
 
-      if (req.path.includes("about")) {
+      if (req.path === "/about") {
         console.log("This is About Page");
       }
 
