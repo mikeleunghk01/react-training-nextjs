@@ -7,9 +7,7 @@ class About extends PureComponent {
 
   static async getInitialProps({ req, res, usefulFeatures, args, ...restInInitialProps }) {
     const isServer = typeof window === 'undefined';
-    console.log({isServer}, "About getInitialProps");
-
-    console.log({restInInitialProps});
+    console.log("About getInitialProps", {isServer}, {restInInitialProps});
 
     return {
       fromInitialProps: "This is About Page",
@@ -21,7 +19,7 @@ class About extends PureComponent {
   render() {
     const { fromInitialProps, ...restInRender } = this.props;
 
-    console.log({restInRender});
+    console.log("About render", {restInRender});
 
     return (
       <div>

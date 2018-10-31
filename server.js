@@ -18,11 +18,11 @@ app
 
     server.get("*", (req, res) => {
       if (!req.path.includes("_next")) {
-        console.log("Not HMR stuff", req.path);
+        console.log("SSR: Not HMR stuff", req.path);
       }
 
       if (req.path === "/about") {
-        console.log("This is About Page");
+        console.log("SSR: This is About Page");
       }
 
       return handle(req, res);

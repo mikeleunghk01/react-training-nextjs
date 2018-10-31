@@ -11,7 +11,7 @@ const withUsefulFeatures = args =>
       static displayName = `withUsefulFeatures(${WrappedComponent.displayName || WrappedComponent.name || "Component"})`;
 
       static async getInitialProps(ctx) {
-        console.log("HOC getInitialProps");
+        console.log("withUsefulFeatures getInitialProps");
 
         const initialProps = WrappedComponent.getInitialProps
           ? await WrappedComponent.getInitialProps({
@@ -27,7 +27,7 @@ const withUsefulFeatures = args =>
       }
 
       render() {
-        console.log('HOC render');
+        console.log('withUsefulFeatures render');
         return <WrappedComponent {...this.props.initialProps} {...WrappedComponent.props} />;
       }
     }

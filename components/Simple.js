@@ -6,7 +6,7 @@ class Simple extends PureComponent {
   }
   render() {
     const isServer = typeof window === 'undefined';
-    console.log({isServer}, "Simple Component");
+    console.log("Simple Component render", {isServer});
 
     return (
       <div>
