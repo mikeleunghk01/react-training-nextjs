@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import withUsefulFeatures from "../components/withUsefulFeatures";
 import Simple from "../components/Simple";
 
-class About extends Component {
+class About extends PureComponent {
   state = { click: 0 }
 
   static async getInitialProps({ req, res, usefulFeatures, args, ...restInInitialProps }) {

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { withRouter } from "next/router";
 import Simple from "../components/Simple";
 
-class Index extends Component {
+class Index extends PureComponent {
   state = {}
 
   static async getInitialProps({ req, res, query = {}, ...rest }) {

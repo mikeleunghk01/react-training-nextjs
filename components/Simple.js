@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class Simple extends Component {
+class Simple extends PureComponent {
   state = {
     simple: 0
   }

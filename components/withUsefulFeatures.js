@@ -27,6 +27,7 @@ const withUsefulFeatures = args =>
       }
 
       render() {
+        console.log('HOC render');
         return <WrappedComponent {...this.props.initialProps} {...WrappedComponent.props} />;
       }
     }
